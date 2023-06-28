@@ -3,7 +3,7 @@
 body {
     font-family: var(--primary-font);
     background-color: var(--primary-white-color);
-    color: var(--primary-color);
+    color: #434455;
 }
 :root {
     --primary-font: 'Roboto' , sans-serif;
@@ -27,7 +27,7 @@ body {
     /** Header **/
 
 .logo {
-    color: var(--primary-color);
+    color: var(--button-text-color);
     font-size: 18px;
     font-family: var(--logo-font);
     font-weight: 800;
@@ -37,7 +37,7 @@ body {
     
 }
 .logo-accent {
-    color: var(--primary-accent-color);
+    color: var(--primary-color);
 }
 .header-list-item {
     font-size: 16px;
@@ -53,8 +53,17 @@ body {
     letter-spacing: var(--primary-letter-spacing);
 }
 .header-list-item>a:hover,
+.header-list-item>a:focus,
 .header-list-item>a:active {
-    color: var(--primary-accent-color);
+    color: var(--button-color);
+}
+.header-address{
+    font-style: normal;
+}
+.address-list-item>a:hover ,
+.address-list-item>a:focus ,
+.address-list-item>a:active {
+    color: var(--button-color);
 }
 
     /** Hero  **/
@@ -67,31 +76,33 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: var(--primary-letter-spacing);
-    text-align: center;
     color: var(--primary-white-color);
 }
 .hero-button{
-    border-radius: 4px;
     background: var(--primary-accent-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-white-color);
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
 
 }
-
+.hero-button:hover ,
+.hero-button:focus {
+    background-color: var(--button-color);
+}
 
     /** Advantages **/
 
-.advantages-list-item>h3 {
+.advantages-title {
     font-size: 20px;
     font-weight: 500;
     line-height:  1.2;
     letter-spacing: var(--primary-letter-spacing);
 }
-.advantages-list-item>p {
+.advantages-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--primary-letter-spacing);
@@ -100,15 +111,22 @@ body {
     /** Activity **/
 
 .medium-title {
+    text-align: center
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: var(--primary-letter-spacing);
+    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
     /** Team **/
 
+.team-list{
+    background-color: var(--primary-white-color);
+}
+.section-team{
+    background-color: #F4F4FD;
+}
 .team-list-item>h3 {
     font-size: 20px;
     font-weight: 500;
@@ -118,6 +136,7 @@ body {
 }
 
 .team-list-item>p {
+    color: var(--primary-address-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--primary-letter-spacing);
@@ -129,15 +148,17 @@ body {
     background-color: var(--primary-color);
 }
 
-.footer>a {
-    color: var(--primary-white-color);
-}
-
 .footer>p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--primary-letter-spacing);
     color: var(--primary-white-color);
+}
+.footer-text {
+    color: #F4F4FD;
+}
+.footer .logo .logo-accent {
+    color: #F4F4FD;
 }
 
 
@@ -147,9 +168,7 @@ body {
 
 .filters-list-item>button:active ,
 .filters-list-item>button:hover {
-    border-radius: 4px;
     background: var(--button-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     color: var(--primary-white-color);
 }
 .filters-list-item>button {
@@ -160,19 +179,19 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--button-text-color);
-    text-align: center;
+    cursor: pointer;
 }
 
     /** Cards **/
 
-.card-content>h2 {
+.card-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: var(--primary-letter-spacing) px;
 }
 
-.card-content>p {
+.card-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--primary-letter-spacing);
