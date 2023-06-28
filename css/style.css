@@ -133,7 +133,7 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--primary-color);
+    color: #2e2f42;
 }
 .section-team {
     background-color: #F4F4FD;
@@ -203,7 +203,8 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: var(--primary-letter-spacing) px;
+    letter-spacing: var(--primary-letter-spacing);
+    color: #2e2f42;
 }
 
 .card-text {
