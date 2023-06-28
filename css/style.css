@@ -31,7 +31,7 @@ body {
     font-size: 18px;
     font-family: var(--logo-font);
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
@@ -44,6 +44,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: var(--primary-letter-spacing);
+    color: var(--primary-color);
 }
 .address-list-item {
     color: var(--primary-address-color);
@@ -72,6 +73,7 @@ body {
     background-color: var(--primary-color);
 }
 .hero-title{
+    text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -101,6 +103,7 @@ body {
     font-weight: 500;
     line-height:  1.2;
     letter-spacing: var(--primary-letter-spacing);
+    color: var(--primary-color);
 }
 .advantages-text {
     font-size: 16px;
@@ -110,22 +113,33 @@ body {
 
     /** Activity **/
 
-.medium-title {
-    text-align: center
+.activity-title {
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--primary-color);
 }
 
     /** Team **/
 
-.team-list{
-    background-color: var(--primary-white-color);
+
+.team-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-color);
 }
-.section-team{
+.section-team {
     background-color: #F4F4FD;
+}
+.team-list-item {
+    background-color: var(--primary-white-color);
 }
 .team-list-item>h3 {
     font-size: 20px;
@@ -148,15 +162,13 @@ body {
     background-color: var(--primary-color);
 }
 
-.footer>p {
+.footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--primary-letter-spacing);
-    color: var(--primary-white-color);
+    color:#F4F4FD;
 }
-.footer-text {
-    color: #F4F4FD;
-}
+
 .footer .logo .logo-accent {
     color: #F4F4FD;
 }
@@ -166,12 +178,14 @@ body {
 
     /** Filters **/
 
-.filters-list-item>button:active ,
-.filters-list-item>button:hover {
+.filter-button:active ,
+.filter-button:hover ,
+.filter-button:focus {
     background: var(--button-color);
     color: var(--primary-white-color);
 }
-.filters-list-item>button {
+.filter-button {
+    font-family: "Roboto", sans-serif;
     border: none;
     outline: none;
     font-size: 16px;
@@ -180,6 +194,7 @@ body {
     letter-spacing: 0.04em;
     color: var(--button-text-color);
     cursor: pointer;
+    background-color:  #F4F4FD;
 }
 
     /** Cards **/
